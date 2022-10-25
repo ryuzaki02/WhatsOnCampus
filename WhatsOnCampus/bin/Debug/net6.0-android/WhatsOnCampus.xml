@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WhatsOnCampus</name>
+    </assembly>
+    <members>
+        <member name="F:WhatsOnCampus.Constants.ServiceUri">
+            <summary>
+            The base URI for the Datasync service.
+            </summary>
+        </member>
+        <member name="F:WhatsOnCampus.Constants.ApplicationId">
+            <summary>
+            The application (client) ID for the native app within Azure Active Directory
+            </summary>
+        </member>
+        <member name="F:WhatsOnCampus.Constants.Scopes">
+            <summary>
+            The list of scopes to request
+            </summary>
+        </member>
+    </members>
+</doc>
