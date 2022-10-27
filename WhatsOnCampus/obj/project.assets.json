@@ -10076,7 +10076,7 @@
         }
       }
     },
-    "net6.0-android31.0/ios-arm64": {
+    "net6.0-android31.0/iossimulator-x64": {
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -17207,7 +17207,7 @@
         }
       }
     },
-    "net6.0-ios15.4/ios-arm64": {
+    "net6.0-ios15.4/iossimulator-x64": {
       "IdentityModel/5.2.0": {
         "type": "package",
         "compile": {
@@ -19882,7 +19882,7 @@
         }
       }
     },
-    "net6.0-maccatalyst15.4/ios-arm64": {
+    "net6.0-maccatalyst15.4/iossimulator-x64": {
       "IdentityModel/5.2.0": {
         "type": "package",
         "compile": {
@@ -24245,7 +24245,7 @@
       "android-x86": {
         "#import": []
       },
-      "ios-arm64": {
+      "iossimulator-x64": {
         "#import": []
       },
       "maccatalyst-x64": {

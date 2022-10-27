@@ -1,6 +1,9 @@
 ﻿using System;
 namespace WhatsOnCampus
 {
+    /// <summary>
+    /// This is a global static class to store the constants for the project
+    /// </summary>
     public static class Constants
     {
         /// <summary>

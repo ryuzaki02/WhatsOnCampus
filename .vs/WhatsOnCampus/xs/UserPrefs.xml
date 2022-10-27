@@ -1,4 +1,40 @@
 ﻿<Properties StartupConfiguration="{DA67E802-0C5C-4435-9C82-A2477D9FBA16}|Default">
-  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsOnCampus/MainPage.xaml.cs">
+    <Files>
+      <File FileName="WhatsOnCampus/MainPage.xaml.cs" Line="33" Column="10" />
+      <File FileName="WhatsOnCampus/MainPage.xaml" Line="34" Column="31" />
+      <File FileName="WhatsOnCampus/AuthenticationToken.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/PlatformService.cs" />
+      <File FileName="WhatsOnCampus/Constants.cs" />
+      <File FileName="WhatsOnCampus/Auth0/WebBrowserAuthenticator.cs" />
+      <File FileName="WhatsOnCampus/Auth0/Auth0ClientOptions.cs" />
+      <File FileName="WhatsOnCampus/Auth0/Auth0Client.cs" />
+      <File FileName="WhatsOnCampus/MauiProgram.cs" />
+      <File FileName="WhatsOnCampus/Platforms/Android/AndroidManifest.xml" />
+      <File FileName="WhatsOnCampus/Platforms/Android/MainActivity.cs" />
+      <File FileName="WhatsOnCampus/Platforms/Android/MainApplication.cs" />
+      <File FileName="WhatsOnCampus/Platforms/Android/WebAuthenticationCallbackActivity.cs" />
+      <File FileName="WhatsOnCampus/Platforms/Android/MsalActivity.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WhatsOnCampus" expanded="True">
+            <Node name="WhatsOnCampus" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

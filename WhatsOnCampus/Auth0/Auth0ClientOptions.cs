@@ -1,6 +1,9 @@
 ﻿using System;
 namespace WhatsOnCampus.Auth0
 {
+    /// <summary>
+    /// Class which is responsible to hold Auth0Client options and their attributes
+    /// </summary>
 	public class Auth0ClientOptions
 	{
         public Auth0ClientOptions()

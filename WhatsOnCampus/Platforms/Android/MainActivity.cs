@@ -3,12 +3,20 @@ using Android.Content;
 using Android.Content.PM;
 using Android.Runtime;
 using Microsoft.Identity.Client;
+using static Java.Lang.ProcessBuilder;
 
 namespace WhatsOnCampus;
 
 [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
 public class MainActivity : MauiAppCompatActivity
 {
+    /// <summary>
+    /// Method to handle call back of authentication from the browser
+    /// When app redirects url to browser then application tracks the action and perfrom accordingly
+    /// </summary>
+    /// <param name="requestCode"></param>
+    /// <param name="resultCode"></param>
+    /// <param name="data"></param>    
     protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
     {
         base.OnActivityResult(requestCode, resultCode, data);

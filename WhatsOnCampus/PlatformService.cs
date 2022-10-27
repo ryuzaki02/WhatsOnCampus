@@ -5,6 +5,12 @@ namespace WhatsOnCampus
 {
     internal class PlatformService
     {
+        /// <summary>
+        /// This method is actually instantiating identity client on the parent window
+        /// it initialised client application builder object with application id and redirect uri
+        /// </summary>
+        /// <param name="parentWindow"></param>
+        /// <returns>"IPublicClientApplication"</returns>
         public static IPublicClientApplication GetIdentityClient(object parentWindow)
         {
             var clientBuilder = PublicClientApplicationBuilder

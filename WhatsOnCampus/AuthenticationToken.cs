@@ -1,5 +1,8 @@
 ﻿namespace WhatsOnCampus
 {
+    /// <summary>
+    /// This class is responsible to maintain authentication token and the user information related attributes
+    /// </summary>
     internal class AuthenticationToken
     {
         public string DisplayName { get; set; }
