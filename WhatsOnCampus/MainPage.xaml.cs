@@ -2,6 +2,11 @@
 using WhatsOnCampus.Auth0;
 using Microsoft.Identity.Client;
 using System.Diagnostics;
+using WhatsOnCampus.MSAL;
+using Google.Cloud.Firestore;
+using static Google.Cloud.Firestore.V1.StructuredQuery.Types;
+using Google.Cloud.Firestore.V1;
+using WhatsOnCampus.ViewModel;
 
 namespace WhatsOnCampus;
 
@@ -11,6 +16,7 @@ public partial class MainPage : ContentPage
     private readonly Auth0Client auth0Client;
     // Object to manage Microsoft Authentication
     public IPublicClientApplication IdentityClient { get; set; }
+    
 
     /// <summary>
     /// Constructor to the class
@@ -18,10 +24,10 @@ public partial class MainPage : ContentPage
     /// </summary>
     /// <param name="client"></param>
     public MainPage(Auth0Client client)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         auth0Client = client;
-        //_ = GetAuthenticationToken();
+        
     }
 
     /// <summary>
@@ -32,91 +38,66 @@ public partial class MainPage : ContentPage
     /// <param name="e"></param>
     private async void OnLoginClicked(object sender, EventArgs e)
     {
-        // This methods takes user to microsoft authentication
-        //_ = GetAuthenticationToken();
+        await Shell.Current.GoToAsync("profilePage");
+        //UserAuthentication userAuthentication = await viewModel.AuthenticateMicrosoft();
+    }
 
-        // This method takes user to Auth0 or google sign in
-        var loginResult = await auth0Client.LoginAsync();
-
-        // Checks if Auth0 user logged in or not
-        // Updates UI accordingly
-        if (!loginResult.IsError)
+    public async Task<FirestoreDb> initFirestore()
+    {//whatsoncampus-b5a48-firebase-adminsdk-3qtvb-ee24678c31.json
+        try
         {
-            LoginView.IsVisible = false;
-            HomeView.IsVisible = true;
+            var stream = await FileSystem.OpenAppPackageFileAsync("whatsoncampus-b5a48-firebase-adminsdk-3qtvb-ee24678c31.json");
+            var reader = new StreamReader(stream);
+            var contents = reader.ReadToEnd();
+
+            FirestoreClientBuilder fbc = new FirestoreClientBuilder { JsonCredentials = contents };
+            return FirestoreDb.Create("whatsoncampus-b5a48", fbc.Build());
         }
-        else
+        catch (Exception)
         {
-            await DisplayAlert("Error", loginResult.ErrorDescription, "OK");
+            throw;
         }
     }
 
-    /// <summary>
-    /// This method is to handle microsoft authentication
-    /// </summary>
-    /// <returns></returns>
-    async Task<AuthenticationToken> GetAuthenticationToken()
+    private async void ConnectToFireStore()
     {
-        // Checks if Identity client is null or not
-        // if true then set parent window to current activity
-        // if false then as Platform service to instantiate Identitiy Client for the parent window and navigate it 
-        if (IdentityClient == null)
-        {
-            object parentWindow = null;
-#if ANDROID
-            parentWindow = Platform.CurrentActivity;
-#endif
-            IdentityClient = PlatformService.GetIdentityClient(parentWindow);
-        }
+        //whatsoncampus-b5a48-firebase-adminsdk-3qtvb-ee24678c31.json
+        //google-services.json
+        var localPath = Path.Combine(FileSystem.CacheDirectory, "GoogleServices.json");
 
-        // Once Identity client is intialised, it then calls the server for user login and account information
-        var accounts = await IdentityClient.GetAccountsAsync();
-        AuthenticationResult result = null;
-        bool tryInteractiveLogin = false;
+        using var json = await FileSystem.OpenAppPackageFileAsync("GoogleServices.json");
+        using var dest = File.Create(localPath);
+        await json.CopyToAsync(dest);
 
-        // This try-catch block checks for silent token for the user
-        try
-        {
-            result = await IdentityClient
-                .AcquireTokenSilent(Constants.Scopes, accounts.FirstOrDefault())
-                .ExecuteAsync();
-        }
-        catch (MsalUiRequiredException)
-        {
-            tryInteractiveLogin = true;
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"MSAL Silent Error: {ex.Message}");
-        }
+        Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", localPath);
+        dest.Close();
 
-        // If interactive login is true then this method executes
-        if (tryInteractiveLogin)
-        {
-            try
-            {
-                result = await IdentityClient
-                    .AcquireTokenInteractive(Constants.Scopes)
-                    .ExecuteAsync()
-                    .ConfigureAwait(false);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"MSAL Interactive Error: {ex.Message}");
-            }
-        }
+        //FirestoreDb db = await initFirestore();
 
-        // Return an object of Authentication token with the details of user
-        // has basic details such as name, toke, user id and expiry
-        return new AuthenticationToken
+
+
+        FirestoreDb db = FirestoreDb.Create("whatsoncampus-b5a48");
+
+        // Create a document with a random ID in the "users" collection.
+        CollectionReference collection = db.Collection("users");
+        DocumentReference document = await collection.AddAsync(new { Name = new { First = "Ada", Last = "Lovelace" }, Born = 1815 });
+
+        // A DocumentReference doesn't contain the data - it's just a path.
+        // Let's fetch the current document.
+        DocumentSnapshot snapshot = await document.GetSnapshotAsync();
+
+        // We can access individual fields by dot-separated path
+        Console.WriteLine(snapshot.GetValue<string>("Name.First"));
+        Console.WriteLine(snapshot.GetValue<string>("Name.Last"));
+        Console.WriteLine(snapshot.GetValue<int>("Born"));
+    }
+
+    private async Task ShowMessage(string title, string message)
+    {
+        _ = this.Dispatcher.Dispatch(async () =>
         {
-            DisplayName = result?.Account?.Username ?? "",
-            ExpiresOn = result?.ExpiresOn ?? DateTimeOffset.MinValue,
-            Token = result?.AccessToken ?? "",
-            UserId = result?.Account?.Username ?? ""
-        };
+            await DisplayAlert(title, message, "OK").ConfigureAwait(false);
+        });
     }
 
 }
-
-

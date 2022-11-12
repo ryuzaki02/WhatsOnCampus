@@ -4,6 +4,56 @@
         <name>WhatsOnCampus</name>
     </assembly>
     <members>
+        <member name="T:WhatsOnCampus.Auth0.Auth0Client">
+            <summary>
+            This class is responsible for Auth0 setup and authentication with options
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.Auth0.Auth0Client.#ctor(WhatsOnCampus.Auth0.Auth0ClientOptions)">
+            <summary>
+            Constructor that initialises object with Auth0ClientOptions
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:WhatsOnCampus.Auth0.Auth0Client.Browser">
+            <summary>
+            Checks the browser availability
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.Auth0.Auth0Client.LoginAsync">
+            <summary>
+            Method to perform login task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WhatsOnCampus.Auth0.Auth0ClientOptions">
+            <summary>
+            Class which is responsible to hold Auth0Client options and their attributes
+            </summary>
+        </member>
+        <member name="T:WhatsOnCampus.Auth0.WebBrowserAuthenticator">
+            <summary>
+            This is the major class which redirects user to web browser to authenticate
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.Auth0.WebBrowserAuthenticator.InvokeAsync(IdentityModel.OidcClient.Browser.BrowserOptions,System.Threading.CancellationToken)">
+            <summary>
+            Method to invoke authentication on browser aysnchronosly
+            </summary>
+            <param name="options"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WhatsOnCampus.AuthenticationToken">
+            <summary>
+            This class is responsible to maintain authentication token and the user information related attributes
+            </summary>
+        </member>
+        <member name="T:WhatsOnCampus.Constants">
+            <summary>
+            This is a global static class to store the constants for the project
+            </summary>
+        </member>
         <member name="F:WhatsOnCampus.Constants.ServiceUri">
             <summary>
             The base URI for the Datasync service.
@@ -18,6 +68,112 @@
             <summary>
             The list of scopes to request
             </summary>
+        </member>
+        <member name="M:WhatsOnCampus.MainPage.#ctor(WhatsOnCampus.Auth0.Auth0Client)">
+            <summary>
+            Constructor to the class
+            Initialises class with Auth0Client and assign it to local variable
+            </summary>
+            <param name="client"></param>
+        </member>
+        <member name="M:WhatsOnCampus.MainPage.OnLoginClicked(System.Object,System.EventArgs)">
+            <summary>
+            Login button action
+            It has currently two methods one to instantiate Auth0 login and other for Microsoft login
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:WhatsOnCampus.MSAL.PCAWrapper">
+            <summary>
+            This is a wrapper for PublicClientApplication. It is singleton.
+            </summary>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PCAWrapper.Instance">
+            <summary>
+            This is the singleton used by Ux. Since PCAWrapper constructor does not have perf or memory issue, it is instantiated directly.
+            </summary>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PCAWrapper.PCA">
+            <summary>
+            Instance of PublicClientApplication. It is provided, if App wants more customization.
+            </summary>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PCAWrapper.UseEmbedded">
+            <summary>
+            This will determine if the Interactive Authentication should be Embedded or System view
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.MSAL.PCAWrapper.AcquireTokenSilentAsync(System.String[])">
+            <summary>
+            Acquire the token silently
+            </summary>
+            <param name="scopes">desired scopes</param>
+            <returns>Authentication result</returns>
+        </member>
+        <member name="M:WhatsOnCampus.MSAL.PCAWrapper.AcquireTokenInteractiveAsync(System.String[])">
+            <summary>
+            Perform the interactive acquisition of the token for the given scope
+            </summary>
+            <param name="scopes">desired scopes</param>
+            <returns></returns>
+        </member>
+        <member name="M:WhatsOnCampus.MSAL.PCAWrapper.SignOutAsync">
+            <summary>
+            It will sign out the user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WhatsOnCampus.MSAL.PCAWrapper.MyLogger.IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel)">
+            <summary>
+            Checks if log is enabled or not based on the Entry level
+            </summary>
+            <param name="eventLogLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WhatsOnCampus.MSAL.PCAWrapper.MyLogger.Log(Microsoft.IdentityModel.Abstractions.LogEntry)">
+            <summary>
+            Log to console for demo purpose
+            </summary>
+            <param name="entry">Log Entry values</param>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PlatformConfig.Instance">
+            <summary>
+            Instance to store data
+            </summary>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PlatformConfig.RedirectUri">
+            <summary>
+            Platform specific Redirect URI
+            </summary>
+        </member>
+        <member name="P:WhatsOnCampus.MSAL.PlatformConfig.ParentWindow">
+            <summary>
+            Platform specific parent window
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.MainActivity.OnActivityResult(System.Int32,Android.App.Result,Android.Content.Intent)">
+            <summary>
+            This is a callback to continue with the authentication
+            Info about redirect URI: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-client-application-configuration#redirect-uri
+            </summary>
+            <param name="requestCode">request code </param>
+            <param name="resultCode">result code</param>
+            <param name="data">intent of the actvity</param>
+        </member>
+        <member name="T:WhatsOnCampus.WebAuthenticationCallbackActivity">
+            <summary>
+            Class is to handle Auth0 for Android
+            Provides call back scheme and other options for the device to behave accordingly
+            </summary>
+        </member>
+        <member name="M:WhatsOnCampus.PlatformService.GetIdentityClient(System.Object)">
+            <summary>
+            This method is actually instantiating identity client on the parent window
+            it initialised client application builder object with application id and redirect uri
+            </summary>
+            <param name="parentWindow"></param>
+            <returns>"IPublicClientApplication"</returns>
         </member>
     </members>
 </doc>

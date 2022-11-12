@@ -52,12 +52,47 @@
 	  <None Remove="Microsoft.Identity.Client" />
 	  <None Remove="IdentityModel.OidcClient" />
 	  <None Remove="Auth0\" />
+	  <None Remove="MSAL\" />
+	  <None Remove="Google.Cloud.Firestore" />
+	  <None Remove="Platforms\Android\GoogleServices.json" />
+	  <None Remove="ViewModel\" />
+	  <None Remove="Model\" />
+	  <None Remove="Views\" />
+	  <None Remove="Microsoft.Toolkit.Mvvm" />
+	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Identity.Client" Version="4.47.2" />
 	  <PackageReference Include="IdentityModel.OidcClient" Version="5.1.0" />
+	  <PackageReference Include="Google.Cloud.Firestore" Version="3.0.0" />
+	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Auth0\" />
+	  <Folder Include="MSAL\" />
+	  <Folder Include="ViewModel\" />
+	  <Folder Include="Model\" />
+	  <Folder Include="Views\" />
+	  <Folder Include="Controls\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Platforms\Android\GoogleServices.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProfilePage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FeedPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoadingPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\FlyoutHeaderControl.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>

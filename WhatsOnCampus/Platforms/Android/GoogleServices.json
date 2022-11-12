@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249877425601",
+    "project_id": "whatsoncampus-b5a48",
+    "storage_bucket": "whatsoncampus-b5a48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249877425601:android:1676b173f0bb98d6af5340",
+        "android_client_info": {
+          "package_name": "com.companyname.whatsoncampus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249877425601-cp2f3hggk374j7bef9k8uaa1eidsn2i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ_7WDYkcL_ZW1yE9dlHbdJaCxZNkX9w4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249877425601-cp2f3hggk374j7bef9k8uaa1eidsn2i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

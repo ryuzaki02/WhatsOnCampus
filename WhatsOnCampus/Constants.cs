@@ -14,14 +14,14 @@ namespace WhatsOnCampus
         /// <summary>
         /// The application (client) ID for the native app within Azure Active Directory
         /// </summary>
-        public static string ApplicationId = "f9a5d166-2d8d-47e4-a96d-b01d1847bae9";
+        public const string ApplicationId = "f9a5d166-2d8d-47e4-a96d-b01d1847bae9";
 
         /// <summary>
         /// The list of scopes to request
         /// </summary>
         public static string[] Scopes = new[]
         {
-          "api://f9a5d166-2d8d-47e4-a96d-b01d1847bae9/access_as_user"
+          "User.Read"//"api://f9a5d166-2d8d-47e4-a96d-b01d1847bae9/access_as_user"
       };
     }
 }

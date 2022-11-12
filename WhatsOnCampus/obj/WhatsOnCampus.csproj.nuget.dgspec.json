@@ -50,6 +50,10 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "IdentityModel.OidcClient": {
               "target": "Package",
               "version": "[5.1.0, )"
@@ -67,6 +71,10 @@
               "target": "Package",
               "version": "[6.0.536, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             }
           },
           "imports": [
@@ -102,6 +110,10 @@
         "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "IdentityModel.OidcClient": {
               "target": "Package",
               "version": "[5.1.0, )"
@@ -119,6 +131,10 @@
               "target": "Package",
               "version": "[6.0.536, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -159,6 +175,10 @@
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "IdentityModel.OidcClient": {
               "target": "Package",
               "version": "[5.1.0, )"
@@ -176,6 +196,10 @@
               "target": "Package",
               "version": "[6.0.536, )",
               "autoReferenced": true
+            },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

@@ -1,4 +1,6 @@
 ﻿using WhatsOnCampus.Auth0;
+using WhatsOnCampus.Views;
+using WhatsOnCampus.ViewModel;
 
 namespace WhatsOnCampus;
 
@@ -19,7 +21,20 @@ public static class MauiProgram
         //builder.Logging.AddDebug();
 #endif
 
+        //Views
         builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<LoginPage>();
+        builder.Services.AddSingleton<ProfilePage>();
+        builder.Services.AddSingleton<FeedPage>();
+        builder.Services.AddSingleton<LoadingPage>();
+
+
+        //ViewModels
+        builder.Services.AddSingleton<LoginViewModel>();
+        builder.Services.AddSingleton<ProfileViewModel>();
+        builder.Services.AddSingleton<FeedViewModel>();
+        builder.Services.AddSingleton<AppShellViewModel>();
+        builder.Services.AddSingleton<LoadingViewModel>();
 
         builder.Services.AddSingleton(new Auth0Client(new()
         {
