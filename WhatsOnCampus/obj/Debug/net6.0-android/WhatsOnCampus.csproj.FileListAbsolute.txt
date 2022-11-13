@@ -1001,3 +1001,7 @@
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.pdb
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.pdb

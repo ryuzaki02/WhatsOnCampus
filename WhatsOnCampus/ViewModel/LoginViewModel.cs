@@ -23,20 +23,27 @@ namespace WhatsOnCampus.ViewModel
 
 	public partial class LoginViewModel: BaseViewModel
 	{
-        public string userDetails;
-
         [ICommand]
         async void Login()
         {
-            if (Preferences.ContainsKey(nameof(App.user)))
+            UserAuthentication authentication = await AuthenticateMicrosoft();
+
+            if (string.IsNullOrWhiteSpace(authentication.error))
             {
-                Preferences.Remove(nameof(App.user));
+                if (Preferences.ContainsKey(nameof(App.user)))
+                {
+                    Preferences.Remove(nameof(App.user));
+                }                
+                Preferences.Set(nameof(App.user), authentication.userDetails);
+                User user = JsonConvert.DeserializeObject<User>(authentication.userDetails);
+                App.user = user;
+                AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
+                await Shell.Current.GoToAsync($"//{nameof(FeedPage)}");
+            }
+            else
+            {
+
             }            
-            Preferences.Set(nameof(App.user), userDetails);
-            User user = JsonConvert.DeserializeObject<User>(userDetails);
-            App.user = user;
-            AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
-            await Shell.Current.GoToAsync($"//{nameof(FeedPage)}");
         }
 
         public LoginViewModel()

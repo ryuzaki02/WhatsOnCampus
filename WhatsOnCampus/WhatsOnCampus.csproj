@@ -60,12 +60,16 @@
 	  <None Remove="Views\" />
 	  <None Remove="Microsoft.Toolkit.Mvvm" />
 	  <None Remove="Controls\" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Refractored.MvvmHelpers" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Identity.Client" Version="4.47.2" />
 	  <PackageReference Include="IdentityModel.OidcClient" Version="5.1.0" />
 	  <PackageReference Include="Google.Cloud.Firestore" Version="3.0.0" />
 	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Auth0\" />
