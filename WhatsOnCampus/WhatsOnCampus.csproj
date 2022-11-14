@@ -62,6 +62,7 @@
 	  <None Remove="Controls\" />
 	  <None Remove="CommunityToolkit.Mvvm" />
 	  <None Remove="Refractored.MvvmHelpers" />
+	  <None Remove="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Identity.Client" Version="4.47.2" />
@@ -78,6 +79,7 @@
 	  <Folder Include="Model\" />
 	  <Folder Include="Views\" />
 	  <Folder Include="Controls\" />
+	  <Folder Include="Services\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Platforms\Android\GoogleServices.json" />
