@@ -9,6 +9,16 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="nameLabelStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style x:Key="subNameLabelStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="TextColor" Value="Gray"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

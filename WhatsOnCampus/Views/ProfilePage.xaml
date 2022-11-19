@@ -4,7 +4,7 @@
              xmlns:model="clr-namespace:WhatsOnCampus.Model"
              xmlns:viewModel="clr-namespace:WhatsOnCampus.ViewModel"
              x:Class="WhatsOnCampus.Views.ProfilePage"
-             Title="ProfilePage">
+             Title="Profile Page">
     <ScrollView>
         <VerticalStackLayout>
             <Label Text="{Binding displayName}" FontSize="Title" HorizontalOptions="Center" VerticalOptions="Center" Margin="30"/>
@@ -12,8 +12,8 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Profile">
                     <VerticalStackLayout VerticalOptions="Center" Padding="10">
-                    <Label Text="{Binding title}" FontSize="16"/>
-                    <Label Text="{Binding subtitle}" FontSize="14"/>
+                    <Label Text="{Binding title}" Style="{StaticResource nameLabelStyle}"/>
+                    <Label Text="{Binding subtitle}" Style="{StaticResource subNameLabelStyle}"/>
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
