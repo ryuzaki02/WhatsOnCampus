@@ -1,11 +1,3 @@
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.runtimeconfig.json
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.dll
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.pdb
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus.apk
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus.aab
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.aab
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.apk
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.apk.idsig
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/build.props
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/adb.props
@@ -102,6 +94,14 @@
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/WhatsOnCampus.AssemblyInfoInputs.cache
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/WhatsOnCampus.AssemblyInfo.cs
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/WhatsOnCampus.csproj.CoreCompileInputs.cache
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.runtimeconfig.json
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/WhatsOnCampus.pdb
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus.apk
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus.aab
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.aab
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.apk
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/bin/Debug/net6.0-android/com.companyname.whatsoncampus-Signed.apk.idsig
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/XamlC.stamp
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/WhatsOnCampus.dll
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/WhatsOnCampus.pdb
@@ -116,6 +116,8 @@
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/res/resources/values/maui_colors.xml
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/uploadflags.txt
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/resolvedassemblies.hash
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Google.Api.CommonProtos.dll
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Google.Api.CommonProtos.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Google.Api.Gax.dll
@@ -188,6 +190,8 @@
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Mono.Android.Export.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Mono.Android.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/mscorlib.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.dll
+/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/netstandard.dll
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/Newtonsoft.Json.dll
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/System.AppContext.dll
@@ -1001,7 +1005,3 @@
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.dll
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/CommunityToolkit.Mvvm.pdb
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.dll
-/Users/tisagamer/Documents/Projects/Cambrian/Cambrian-Android-.Net/WhatsOnCampus/WhatsOnCampus/obj/Debug/net6.0-android/android/assets/MvvmHelpers.pdb
