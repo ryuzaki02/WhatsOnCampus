@@ -5,6 +5,8 @@ using WhatsOnCampus.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
+using Microsoft.Toolkit.Mvvm.Input;
+using Android.App.AppSearch;
 
 namespace WhatsOnCampus.ViewModel
 {
@@ -13,6 +15,7 @@ namespace WhatsOnCampus.ViewModel
         public IFeedDataStore DataStore => DependencyService.Get<IFeedDataStore>();
         public ObservableRangeCollection<FeedModel> feedModels { get; set; }
         public AsyncCommand RefreshCommand { get; }
+        private string searchQuery = "cambriancollege";
 
         public FeedViewModel()
         {
@@ -24,7 +27,7 @@ namespace WhatsOnCampus.ViewModel
         public async Task getTweets()
         {
             feedModels.Clear();
-            TwitterRoot root = await DataStore.GetTweets();
+            TwitterRoot root = await DataStore.GetTweets(searchQuery);
             for (int i = 0; i < root.data.Count; i++)
             {
                 FeedModel feedModel = new FeedModel();
@@ -35,7 +38,6 @@ namespace WhatsOnCampus.ViewModel
                 feedModel.profileImageUrl = user.profile_image_url;
                 feedModels.Add(feedModel);
             }
-            Console.WriteLine(feedModels);
             IsBusy = false;
         }
 
@@ -49,6 +51,31 @@ namespace WhatsOnCampus.ViewModel
                 }
             }
             return null;
+        }
+
+        private CancellationTokenSource _throttleCts = new CancellationTokenSource();
+
+        public async Task onSearchBarTextChangedAsync(String text)
+        {
+            Console.WriteLine(text);
+            searchQuery = text.Length > 0 ? text : "cambriancollege";
+            try
+            {
+                Interlocked.Exchange(ref _throttleCts, new CancellationTokenSource()).Cancel();
+
+                //NOTE THE 500 HERE - WHICH IS THE TIME TO WAIT
+                await Task.Delay(TimeSpan.FromMilliseconds(500), _throttleCts.Token)
+
+                    //NOTICE THE "ACTUAL" SEARCH METHOD HERE
+                    .ContinueWith(async task => await getTweets(),
+                        CancellationToken.None,
+                        TaskContinuationOptions.OnlyOnRanToCompletion,
+                        TaskScheduler.FromCurrentSynchronizationContext());
+            }
+            catch
+            {
+                //Ignore any Threading errors
+            }
         }
     }
 }

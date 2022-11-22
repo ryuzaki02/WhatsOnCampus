@@ -5,7 +5,7 @@ namespace WhatsOnCampus.Services
 {
 	public interface IFeedDataStore
 	{
-        Task<TwitterRoot> GetTweets();
+        Task<TwitterRoot> GetTweets(string searchQuery);
     }
 }
 
