@@ -13,25 +13,36 @@ namespace WhatsOnCampus.ViewModel
 	public partial class FeedViewModel : BaseViewModel
 	{        
         public IFeedDataStore DataStore => DependencyService.Get<IFeedDataStore>();
-        public ObservableRangeCollection<FeedModel> feedModels { get; set; }
-        public AsyncCommand RefreshCommand { get; }
-        private string searchQuery = "cambriancollege";
+        public ObservableRangeCollection<FeedModel> feedModels { get; set; }                
+        public bool IsLoading { get; set; }
+        public bool IsRefresh { get; set; }
+        private string searchQuery = "";
+        private string nextTweetPageFeedId = "";
 
         public FeedViewModel()
         {
-            feedModels = new ObservableRangeCollection<FeedModel>();
-            RefreshCommand = new AsyncCommand(getTweets);
+            feedModels = new ObservableRangeCollection<FeedModel>();                        
+            Refresh();
+        }
+
+        [ICommand]
+        public void Refresh()
+        {
+            searchQuery = "cambriancollege";
+            IsRefresh = true;
             getTweets();
         }
 
         public async Task getTweets()
         {
-            feedModels.Clear();
-            TwitterRoot root = await DataStore.GetTweets(searchQuery);
+            if (IsRefresh == true) feedModels.Clear();
+
+            TwitterRoot root = await DataStore.GetTweets(searchQuery, nextTweetPageFeedId);
             for (int i = 0; i < root.data.Count; i++)
             {
                 FeedModel feedModel = new FeedModel();
                 TwitterUser user = GetTwitterUser(root.data[i].author_id, root);
+                nextTweetPageFeedId = root.meta.next_token;
                 feedModel.name = user.username;
                 feedModel.dateTime = root.data[i].created_at.ToString();
                 feedModel.postContent = root.data[i].text;
@@ -39,6 +50,8 @@ namespace WhatsOnCampus.ViewModel
                 feedModels.Add(feedModel);
             }
             IsBusy = false;
+            IsLoading = false;
+            IsRefresh = false;
         }
 
         private TwitterUser GetTwitterUser(string authorId, TwitterRoot root)
@@ -75,6 +88,19 @@ namespace WhatsOnCampus.ViewModel
             catch
             {
                 //Ignore any Threading errors
+            }
+        }
+
+        [ICommand]
+        public async void LoadMoreData()
+        {
+            await Task.Delay(1000);
+            if (IsLoading == true) return;            
+            if (feedModels.Count > 0)
+            {
+                IsLoading = true;
+                IsRefresh = false;                
+                getTweets();
             }
         }
     }

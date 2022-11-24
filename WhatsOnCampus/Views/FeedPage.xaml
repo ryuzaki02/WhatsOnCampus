@@ -6,16 +6,11 @@
              x:DataType="viewModel:FeedViewModel"
              x:Class="WhatsOnCampus.Views.FeedPage"
              Title="Feed Page">
-    <ScrollView>
-        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
-        <VerticalStackLayout>
-            <SearchBar Grid.Row="0"
-                       Grid.Column="0"
-                       Margin="0,0,0,10"
-                       x:Name="searchForNotes"
-                       TextChanged="OnSearchTextChanged"
+    <VerticalStackLayout>
+        <SearchBar TextChanged="OnSearchTextChanged"
                        Placeholder="Search..." />
-            <CollectionView ItemsSource="{Binding feedModels}">
+        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
+            <CollectionView ItemsSource="{Binding feedModels}" RemainingItemsThreshold="1" RemainingItemsThresholdReachedCommand="{Binding LoadMoreDataCommand}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:FeedModel">
                         <VerticalStackLayout VerticalOptions="Center">
@@ -44,7 +39,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </VerticalStackLayout>
             </RefreshView>
-    </ScrollView>
+        </VerticalStackLayout>
 </ContentPage>
