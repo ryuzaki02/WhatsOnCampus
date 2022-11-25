@@ -15,16 +15,18 @@
                 x:Name="HomeView"
                 IsVisible="false">
             
-              <Image
-                  Source=""                  
-                  SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                  HeightRequest="200"
-                  HorizontalOptions="Center" />
-                
+         
           </StackLayout>
 
              <StackLayout
                 x:Name="LoginView">
+                     <Image
+                  Source="logo"                  
+                  SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                  HeightRequest="200"
+                  WidthRequest="500"
+                  HorizontalOptions="Center" />
+                
                 <Button 
                     x:Name="LoginBtn"
                     Text="Microsoft Login"
