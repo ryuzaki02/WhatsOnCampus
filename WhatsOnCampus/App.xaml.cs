@@ -14,6 +14,8 @@ public partial class App : Application
 
         DependencyService.Register<WebClientService>();
 
+        DependencyService.Register<Services.UserDatastore>();
+
         InitializeComponent();
 
 		MainPage = new AppShell();

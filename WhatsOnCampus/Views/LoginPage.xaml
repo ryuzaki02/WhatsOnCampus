@@ -5,7 +5,7 @@
              xmlns:models="clr-namespace:WhatsOnCampus.Model"
              Shell.NavBarIsVisible="False"
              Title="LoginPage">
-    <ScrollView>
+    <ScrollView Background="{StaticResource Blue200Accent}">
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -29,6 +29,7 @@
                 
                 <Button 
                     x:Name="LoginBtn"
+                  
                     Text="Microsoft Login"
                     SemanticProperties.Hint="Click to log in"                    
                     HorizontalOptions="Center"

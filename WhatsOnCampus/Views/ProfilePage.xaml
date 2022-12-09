@@ -5,19 +5,26 @@
              xmlns:viewModel="clr-namespace:WhatsOnCampus.ViewModel"
              x:Class="WhatsOnCampus.Views.ProfilePage"
              Title="Profile Page">
-    <ScrollView>
-        <VerticalStackLayout>
-            <Label Text="{Binding displayName}" FontSize="Title" HorizontalOptions="Center" VerticalOptions="Center" Margin="30"/>
-        <CollectionView ItemsSource="{Binding Profiles}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Profile">
-                    <VerticalStackLayout VerticalOptions="Center" Padding="10">
-                    <Label Text="{Binding title}" Style="{StaticResource nameLabelStyle}"/>
-                    <Label Text="{Binding subtitle}" Style="{StaticResource subNameLabelStyle}"/>
-                    </VerticalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </VerticalStackLayout>            
-    </ScrollView>
+    
+  
+    <StackLayout>
+        <Entry >
+
+
+        </Entry>
+        <Button Text="Save"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Command="{Binding SaveCommand}" 
+                BorderColor="AliceBlue"/>
+        <Label x:Name="SaveBtn"
+               Text="Save"
+               FontSize="18"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+    
+    </StackLayout>
+    
 </ContentPage>
+
+

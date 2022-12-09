@@ -50,9 +50,17 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Google.Cloud.Firestore": {
               "target": "Package",
@@ -64,7 +72,7 @@
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.47.2, )"
+              "version": "[4.48.1, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -80,9 +88,17 @@
               "target": "Package",
               "version": "[7.1.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "System.Runtime.InteropServices.NFloat.Internal": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
@@ -180,9 +196,17 @@
         "net6.0-ios16.0": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Google.Cloud.Firestore": {
               "target": "Package",
@@ -194,7 +218,7 @@
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.47.2, )"
+              "version": "[4.48.1, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -210,14 +234,17 @@
               "target": "Package",
               "version": "[7.1.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
@@ -287,9 +314,17 @@
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Google.Cloud.Firestore": {
               "target": "Package",
@@ -301,7 +336,7 @@
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.47.2, )"
+              "version": "[4.48.1, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -317,14 +352,17 @@
               "target": "Package",
               "version": "[7.1.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
-              "version": "[6.0.1, )",
-              "autoReferenced": true
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

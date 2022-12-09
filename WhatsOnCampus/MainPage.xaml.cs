@@ -8,7 +8,7 @@ using static Google.Cloud.Firestore.V1.StructuredQuery.Types;
 using Google.Cloud.Firestore.V1;
 using WhatsOnCampus.ViewModel;
 
-namespace WhatsOnCampus;
+namespace WhatsOnCampus.Views;
 
 public partial class MainPage : ContentPage
 {

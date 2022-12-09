@@ -6,8 +6,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Microsoft.Toolkit.Mvvm.Input;
+#if ANDROID
 using Android.App.AppSearch;
-
+#endif
 namespace WhatsOnCampus.ViewModel
 {
 	public partial class FeedViewModel : BaseViewModel

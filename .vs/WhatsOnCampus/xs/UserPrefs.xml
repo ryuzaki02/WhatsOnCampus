@@ -1,71 +1,47 @@
 ﻿<Properties StartupConfiguration="{DA67E802-0C5C-4435-9C82-A2477D9FBA16}|Default">
-  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus PreferredExecutionTarget="Android.pixel_5_-_api_33" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_4a_-_api_33" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsOnCampus/Views/FeedPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsOnCampus/Views/LoginPage.xaml.cs">
     <Files>
-      <File FileName="WhatsOnCampus/MainPage.xaml.cs" Line="5" Column="7" />
-      <File FileName="WhatsOnCampus/MainPage.xaml" Line="29" Column="38" />
-      <File FileName="WhatsOnCampus/AuthenticationToken.cs" Line="4" Column="111" />
-      <File FileName="WhatsOnCampus/PlatformService.cs" />
+      <File FileName="WhatsOnCampus/Views/LoginPage.xaml" Line="35" Column="20" />
+      <File FileName="WhatsOnCampus/Views/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/Services/FeedDataStoreAPI.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/ViewModel/FeedViewModel.cs" />
+      <File FileName="WhatsOnCampus/WhatsOnCampus.csproj" />
+      <File FileName="WhatsOnCampus/ViewModel/LoginViewModel.cs" Line="43" Column="17" />
+      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml" />
+      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml.cs" />
+      <File FileName="WhatsOnCampus/Services/UserDatastore.cs" Line="47" Column="49" />
+      <File FileName="WhatsOnCampus/App.xaml.cs" />
+      <File FileName="WhatsOnCampus/Settings/Firebase.cs" Line="10" Column="6" />
+      <File FileName="WhatsOnCampus/Views/FeedPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/MainPage.xaml.cs" />
       <File FileName="WhatsOnCampus/Constants.cs" />
-      <File FileName="WhatsOnCampus/Auth0/WebBrowserAuthenticator.cs" />
-      <File FileName="WhatsOnCampus/Auth0/Auth0ClientOptions.cs" />
-      <File FileName="WhatsOnCampus/Auth0/Auth0Client.cs" />
-      <File FileName="WhatsOnCampus/MauiProgram.cs" />
-      <File FileName="WhatsOnCampus/Platforms/Android/AndroidManifest.xml" />
-      <File FileName="WhatsOnCampus/Platforms/Android/MainActivity.cs" />
-      <File FileName="WhatsOnCampus/Platforms/Android/MainApplication.cs" />
-      <File FileName="WhatsOnCampus/Platforms/Android/WebAuthenticationCallbackActivity.cs" />
-      <File FileName="WhatsOnCampus/Platforms/Android/MsalActivity.cs" />
-      <File FileName="WhatsOnCampus/App.xaml" Line="21" Column="21" />
-      <File FileName="WhatsOnCampus/App.xaml.cs" Line="9" Column="2" />
-      <File FileName="WhatsOnCampus/AppShell.xaml.cs" Line="11" Column="26" />
-      <File FileName="WhatsOnCampus/AppShell.xaml" Line="39" Column="8" />
-      <File FileName="WhatsOnCampus/MSAL/PCAWrapper.cs" Line="4" Column="14" />
-      <File FileName="WhatsOnCampus/MSAL/PlatformConfig.cs" />
-      <File FileName="WhatsOnCampus/Model/User.cs" Line="4" Column="19" />
-      <File FileName="WhatsOnCampus/ViewModel/ProfileViewModel.cs" Line="17" Column="30" />
-      <File FileName="WhatsOnCampus/ViewModel/BaseViewModel.cs" Line="6" Column="19" />
-      <File FileName="WhatsOnCampus/Views/LoginPage.xaml" Line="21" Column="38" />
-      <File FileName="WhatsOnCampus/Views/LoginPage.xaml.cs" Line="11" Column="35" />
-      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml" Line="16" Column="94" />
-      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml.cs" Line="10" Column="34" />
-      <File FileName="WhatsOnCampus/ViewModel/FeedViewModel.cs" Line="21" Column="13" />
-      <File FileName="WhatsOnCampus/Views/FeedPage.xaml" Line="42" Column="23" />
-      <File FileName="WhatsOnCampus/Views/FeedPage.xaml.cs" Line="9" Column="35" />
-      <File FileName="WhatsOnCampus/Model/Icons.cs" Line="11" Column="1" />
-      <File FileName="WhatsOnCampus/ViewModel/AppShellViewModel.cs" Line="11" Column="21" />
-      <File FileName="WhatsOnCampus/Views/LoadingPage.xaml" Line="5" Column="43" />
-      <File FileName="WhatsOnCampus/ViewModel/LoadingViewModel.cs" Line="27" Column="60" />
-      <File FileName="WhatsOnCampus/Views/LoadingPage.xaml.cs" Line="1" Column="31" />
-      <File FileName="WhatsOnCampus/Controls/FlyoutHeaderControl.xaml" Line="6" Column="45" />
-      <File FileName="WhatsOnCampus/Controls/FlyoutHeaderControl.xaml.cs" Line="11" Column="41" />
-      <File FileName="WhatsOnCampus/ViewModel/LoginViewModel.cs" Line="41" Column="71" />
-      <File FileName="WhatsOnCampus/Model/Profile.cs" Line="4" Column="22" />
-      <File FileName="WhatsOnCampus/Services/IWebClientService.cs" Line="6" Column="22" />
-      <File FileName="WhatsOnCampus/Services/WebClientService.cs" Line="9" Column="49" />
-      <File FileName="WhatsOnCampus/Services/IFeedDataStore.cs" Line="8" Column="27" />
-      <File FileName="WhatsOnCampus/Model/Twitter.cs" Line="39" Column="1" />
-      <File FileName="WhatsOnCampus/Services/FeedDataStoreAPI.cs" Line="19" Column="26" />
-      <File FileName="WhatsOnCampus/Model/FeedModel.cs" Line="9" Column="26" />
+      <File FileName="WhatsOnCampus/MauiProgram.cs" Line="47" Column="1" />
+      <File FileName="WhatsOnCampus/PlatformService.cs" />
+      <File FileName="WhatsOnCampus/ViewModel/ProfileViewModel.cs" Line="49" Column="15" />
+      <File FileName="WhatsOnCampus/Services/IFirebase.cs" Line="4" Column="28" />
+      <File FileName="WhatsOnCampus/Services/IWebClientService.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/Services/WebClientService.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/Services/IFeedDataStore.cs" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/AppShell.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WhatsOnCampus" expanded="True">
             <Node name="WhatsOnCampus" expanded="True">
-              <Node name="Model" expanded="True" />
+              <Node name="Platforms" expanded="True" />
+              <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="ViewModel" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="FeedPage.xaml" expanded="True" selected="True" />
-                <Node name="LoadingPage.xaml" expanded="True" />
-                <Node name="LoginPage.xaml" expanded="True" />
-                <Node name="ProfilePage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True">
+                  <Node name="LoginPage.xaml.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
@@ -73,9 +49,16 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/LoginViewModel.cs" relfile="WhatsOnCampus/ViewModel/LoginViewModel.cs" line="38" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/Services/UserDatastore.cs" relfile="WhatsOnCampus/Services/UserDatastore.cs" line="26" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="43" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="51" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus PreferredExecutionTarget="Android.pixel_4a_-_api_33" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
 </Properties>

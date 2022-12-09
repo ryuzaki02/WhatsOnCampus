@@ -15,6 +15,8 @@ namespace WhatsOnCampus.Model
         public string surname { get; set; }
         public string userPrincipalName { get; set; }
         public string id { get; set; }
+        public string Key { get; internal set; }
+        public string FirstName { get; internal set; }
     }
 }
 

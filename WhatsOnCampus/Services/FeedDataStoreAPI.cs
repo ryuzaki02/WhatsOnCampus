@@ -3,8 +3,9 @@ using WhatsOnCampus.Model;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+#if ANDROID
 using static Android.Provider.DocumentsContract;
-
+#endif
 namespace WhatsOnCampus.Services
 {
     public class FeedDataStoreAPI : IFeedDataStore

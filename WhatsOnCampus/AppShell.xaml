@@ -3,14 +3,16 @@
     x:Class="WhatsOnCampus.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:WhatsOnCampus.Views"
     xmlns:local="clr-namespace:WhatsOnCampus"
     Shell.TabBarIsVisible="False"
+    Shell.FlyoutBehavior="Flyout"
     xmlns:models="clr-namespace:WhatsOnCampus.Model"
     xmlns:pages="clr-namespace:WhatsOnCampus.Views">
 
     <!--<ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate views:MainPage}"
         Route="MainPage" />-->
 
     <!--<ShellContent

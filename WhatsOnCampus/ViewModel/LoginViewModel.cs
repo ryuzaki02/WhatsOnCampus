@@ -37,6 +37,7 @@ namespace WhatsOnCampus.ViewModel
                 Preferences.Set(nameof(App.user), authentication.userDetails);
                 User user = JsonConvert.DeserializeObject<User>(authentication.userDetails);
                 App.user = user;
+                Preferences.Set("User", JsonConvert.SerializeObject(user));
                 AppShell.Current.FlyoutHeader = new FlyoutHeaderControl();
                 await Shell.Current.GoToAsync($"//{nameof(FeedPage)}");
             }

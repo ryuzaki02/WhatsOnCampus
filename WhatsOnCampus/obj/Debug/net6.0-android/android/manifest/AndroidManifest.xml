@@ -46,13 +46,14 @@
     <activity android:name="crc64ba438d8f48cf7e75.IntermediateActivity" android:configChanges="orientation|screenSize" android:exported="true" />
     <receiver android:name="crc640a8d9a12ddbf2cf2.BatteryBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" />
     <receiver android:name="crc640a8d9a12ddbf2cf2.EnergySaverBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" />
-    <activity android:name="microsoft.identity.client.AuthenticationActivity" />
-    <activity android:name="crc64ed1888fb4925e3b7.AuthenticationAgentActivity" android:configChanges="orientation|screenSize" />
+    <activity android:name="crc648316b0a9aa8cfd61.BrowserTabActivity" android:exported="true" />
+    <activity android:name="microsoft.identity.client.AuthenticationActivity" android:exported="true" />
+    <activity android:name="crc64ed1888fb4925e3b7.AuthenticationAgentActivity" android:configChanges="orientation|screenSize" android:exported="true" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.companyname.whatsoncampus.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
     <provider android:name="androidx.startup.InitializationProvider" android:authorities="com.companyname.whatsoncampus.androidx-startup" android:exported="false" tools:node="merge">
-      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
       <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
     </provider>
     <uses-library android:name="androidx.window.extensions" android:required="false" />
     <uses-library android:name="androidx.window.sidecar" android:required="false" />
