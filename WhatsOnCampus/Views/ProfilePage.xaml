@@ -5,24 +5,29 @@
              xmlns:viewModel="clr-namespace:WhatsOnCampus.ViewModel"
              x:Class="WhatsOnCampus.Views.ProfilePage"
              Title="Profile Page">
-    
-  
-    <StackLayout>
-        <Entry >
-
-
-        </Entry>
+    <StackLayout >
+             <Frame Margin="10"
+                    BorderColor="Black"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                           >
+                          <ImageButton x:Name="ProfilePic"
+                                       Clicked="editProfilePic"
+                                        Aspect="AspectFill"
+                                        Margin="-40"
+                                        HeightRequest="100"
+                                        WidthRequest="100"
+                             />
+                    </Frame>
+                   
         <Button Text="Save"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Command="{Binding SaveCommand}" 
                 BorderColor="AliceBlue"/>
-        <Label x:Name="SaveBtn"
-               Text="Save"
-               FontSize="18"
-               VerticalOptions="Center"
-               HorizontalOptions="Center" />
-    
     </StackLayout>
     
 </ContentPage>
