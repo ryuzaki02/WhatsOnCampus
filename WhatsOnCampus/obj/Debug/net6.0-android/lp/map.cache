@@ -1,6 +1,7 @@
 CommunityToolkit.Maui.Core.dll
 CommunityToolkit.Maui.dll
 GoogleGson.dll
+InputKit.Maui.dll
 Microsoft.Identity.Client.dll
 Microsoft.Maui.Controls.Compatibility.dll
 Microsoft.Maui.Controls.dll
@@ -8,6 +9,8 @@ Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+Plainer.Maui.dll
+UraniumUI.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
