@@ -5,11 +5,13 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.whatsoncampus" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.whatsoncampus" android:versionCode="1" android:versionName="1.0">
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true" android:name="crc641ae802e01db27e5b.MainApplication" android:label="WhatsOnCampus" android:debuggable="true" android:extractNativeLibs="true">
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true" android:label="WhatsOnCampus" android:name="crc641ae802e01db27e5b.MainApplication" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/Maui.SplashTheme" android:name="crc641ae802e01db27e5b.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -49,7 +51,8 @@
   </application>
   <queries>
     <intent>
-      <action android:name="android.support.customtabs.action.CustomTabsService" />
+      <action android:name="android.media.action.IMAGE_CAPTURE" />
     </intent>
   </queries>
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
 </manifest>

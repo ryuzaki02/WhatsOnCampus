@@ -2,6 +2,7 @@
 using WhatsOnCampus.Auth0;
 using WhatsOnCampus.Views;
 using WhatsOnCampus.ViewModel;
+using UraniumUI;
 
 namespace WhatsOnCampus;
 
@@ -11,7 +12,10 @@ public static class MauiProgram
 	{
         var builder = MauiApp.CreateBuilder();
         builder
-          .UseMauiApp<App>()
+          .UseMauiApp<App>().ConfigureMauiHandlers(handlers =>
+          {
+              handlers.AddUraniumUIHandlers(); // 👈 This line should be added.
+          })
           .ConfigureFonts(fonts =>
           {
               fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

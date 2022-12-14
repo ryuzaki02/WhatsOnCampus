@@ -9,9 +9,12 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <queries>
     <intent>
-      <action android:name="android.support.customtabs.action.CustomTabsService" />
+      <action android:name="android.media.action.IMAGE_CAPTURE" />
     </intent>
   </queries>
   <application android:name="crc641ae802e01db27e5b.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="WhatsOnCampus" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
@@ -51,11 +54,11 @@
     <activity android:name="crc64ed1888fb4925e3b7.AuthenticationAgentActivity" android:configChanges="orientation|screenSize" android:exported="true" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.companyname.whatsoncampus.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
+    <uses-library android:name="androidx.window.extensions" android:required="false" />
+    <uses-library android:name="androidx.window.sidecar" android:required="false" />
     <provider android:name="androidx.startup.InitializationProvider" android:authorities="com.companyname.whatsoncampus.androidx-startup" android:exported="false" tools:node="merge">
       <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
       <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
     </provider>
-    <uses-library android:name="androidx.window.extensions" android:required="false" />
-    <uses-library android:name="androidx.window.sidecar" android:required="false" />
   </application>
 </manifest>

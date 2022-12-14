@@ -70,6 +70,7 @@
 	  <None Remove="CommunityToolkit.Maui" />
 	  <None Remove="FirebaseDatabase.net" />
 	  <None Remove="FirebaseStorage.net" />
+	  <None Remove="UraniumUI" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.Identity.Client" Version="4.48.1" />
@@ -83,6 +84,7 @@
 	  <PackageReference Include="CommunityToolkit.Maui" Version="2.0.0" />
 	  <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
 	  <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+	  <PackageReference Include="UraniumUI" Version="1.1.1" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Auth0\" />

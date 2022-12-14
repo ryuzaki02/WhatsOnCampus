@@ -1,31 +1,15 @@
 ﻿<Properties StartupConfiguration="{DA67E802-0C5C-4435-9C82-A2477D9FBA16}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_4a_-_api_33" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsOnCampus/Views/LoginPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsOnCampus/App.xaml">
     <Files>
-      <File FileName="WhatsOnCampus/Views/LoginPage.xaml" Line="35" Column="20" />
-      <File FileName="WhatsOnCampus/Views/LoginPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/Services/FeedDataStoreAPI.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/ViewModel/FeedViewModel.cs" />
-      <File FileName="WhatsOnCampus/WhatsOnCampus.csproj" />
-      <File FileName="WhatsOnCampus/ViewModel/LoginViewModel.cs" Line="43" Column="17" />
-      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml" />
-      <File FileName="WhatsOnCampus/Views/ProfilePage.xaml.cs" />
-      <File FileName="WhatsOnCampus/Services/UserDatastore.cs" Line="47" Column="49" />
-      <File FileName="WhatsOnCampus/App.xaml.cs" />
-      <File FileName="WhatsOnCampus/Settings/Firebase.cs" Line="10" Column="6" />
-      <File FileName="WhatsOnCampus/Views/FeedPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/MainPage.xaml.cs" />
-      <File FileName="WhatsOnCampus/Constants.cs" />
-      <File FileName="WhatsOnCampus/MauiProgram.cs" Line="47" Column="1" />
-      <File FileName="WhatsOnCampus/PlatformService.cs" />
-      <File FileName="WhatsOnCampus/ViewModel/ProfileViewModel.cs" Line="49" Column="15" />
-      <File FileName="WhatsOnCampus/Services/IFirebase.cs" Line="4" Column="28" />
-      <File FileName="WhatsOnCampus/Services/IWebClientService.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/Services/WebClientService.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/Services/IFeedDataStore.cs" Line="1" Column="1" />
-      <File FileName="WhatsOnCampus/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.Android.Sdk.Darwin/32.0.476/tools/Xamarin.Android.EmbeddedResource.targets" />
       <File FileName="WhatsOnCampus/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/App.xaml" Line="13" Column="22" />
+      <File FileName="WhatsOnCampus/MainPage.xaml" />
+      <File FileName="WhatsOnCampus/MauiProgram.cs" Line="15" Column="1" />
+      <File FileName="WhatsOnCampus/App.xaml.cs" Line="19" Column="1" />
+      <File FileName="WhatsOnCampus/Resources/Styles/Styles.xaml" Line="1" Column="1" />
+      <File FileName="WhatsOnCampus/Resources/Styles/Colors.xaml" Line="6" Column="33" />
       <File FileName="WhatsOnCampus/AppShell.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -33,15 +17,21 @@
         <State name="__root__">
           <Node name="WhatsOnCampus" expanded="True">
             <Node name="WhatsOnCampus" expanded="True">
-              <Node name="Platforms" expanded="True" />
-              <Node name="Resources" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Platforms" expanded="True">
+                <Node name="Android" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Styles" expanded="True" />
+              </Node>
               <Node name="Services" expanded="True" />
+              <Node name="Settings" expanded="True" />
               <Node name="ViewModel" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="LoginPage.xaml" expanded="True">
-                  <Node name="LoginPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="LoginPage.xaml" expanded="True" />
+                <Node name="ProfilePage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" selected="True" />
               <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
@@ -50,15 +40,15 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_4a_-_api_33" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/LoginViewModel.cs" relfile="WhatsOnCampus/ViewModel/LoginViewModel.cs" line="38" column="1" />
-      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/Services/UserDatastore.cs" relfile="WhatsOnCampus/Services/UserDatastore.cs" line="26" column="1" />
-      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="43" column="1" />
-      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="51" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="45" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="58" column="1" />
+      <Breakpoint file="/Users/divyakhemani/Documents/WhatsOnCampus/WhatsOnCampus/ViewModel/ProfileViewModel.cs" relfile="WhatsOnCampus/ViewModel/ProfileViewModel.cs" line="47" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus PreferredExecutionTarget="Android.pixel_4a_-_api_33" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MonoDevelop.Ide.ItemProperties.WhatsOnCampus PreferredExecutionTarget="Android.pixel_4a_-_api_33" />
+  <MultiItemStartupConfigurations />
 </Properties>
